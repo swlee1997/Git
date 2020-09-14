@@ -1,0 +1,40 @@
+#include <stdio.h> 
+
+int add(int x, int y)
+{
+return x + y;
+}
+
+int Sub(int x, int y)
+{
+return x - y;
+}
+
+int Mul(int x , int y)
+{
+return x*y;
+}
+
+int Div(int x , int y)
+{
+if (y==0){
+printf("0으로 나눌수없다.\n");
+return 0;
+}
+return x/y;
+}
+
+int main()
+{
+int x,y;
+
+printf("정숫값 입력:");
+scanf_s("%d %d", &x,&y);
+
+printf("더하기 : %d + %d = %d\n", x,y Add(x,y));
+printf("빼기 : %d + %d = %d\n", x,y Sub(x,y));
+printf("곱하기 : %d + %d = %d\n", x,y Mul(x,y));
+printf("나누기 : %d + %d = %d\n", x,y Div(x,y));
+
+return 0 ;
+}
